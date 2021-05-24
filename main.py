@@ -1,4 +1,5 @@
 import re
+import os
 
 import pokepy
 from pyrogram import Client, filters
@@ -10,8 +11,10 @@ from moveset import moveset_text
 from locations import locations_text
 from markup import data_markup, moveset_markup, locations_markup
 
-
-app = Client("Debug")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_ID = int(os.environ.get("API_ID", 12345))
+API_HASH = os.environ.get("API_HASH")
+app = Client("Poke-Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 pk = pokepy.V2Client()
 user_dict = {}
 with open("src/pkmn.txt") as f:
