@@ -54,4 +54,3 @@ def stats_rating_emoji(stats):
             rating_emoji = "🟣🟣🟣🟣🟣🟣"
         emoji_dict[stat] = rating_emoji
     return emoji_dict
-©
