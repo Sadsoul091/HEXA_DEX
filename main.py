@@ -112,12 +112,10 @@ def locations(app, query):
 
 @app.on_message(filters.command("start"))
 def start(app, message):
-    text = """⚡️ <b><u>What is Rotogram?</u></b>
-Rotomgram is a bot which acts as a helper for trainers on Telegram. \
-You can check information of Pokemon, Showdown usage and more as quickly as possible, without ever leaving Telegram\n
-🛠 <b><u>Usage</u></b>
-Just write Pokemon name after @rotogrambot (e.g.: @rotogrambot Rotom)\n
-@alessiocelentano | <a href="t.me/rotogram">Follow us</a> | <a href="github.com/alessiocelentano/rotogram">GitHub</a>"""
+    text = """⚡️ KON'NICHIWA.... 
+    I am the official POKEDEX of the group POKEMON TRAINER CLUB.
+    Accessing me is very easy just TAG me with my username @PTC_dex_ROBOT and then type any pokemon name. Congratulations! you got the pokemon info you are looking for.
+    I was made by a person called https://t.me/The_Sad_XX_Soul, A life long SAD PERSON. """
     app.send_message(
         chat_id=message.from_user.id,
         text=text
