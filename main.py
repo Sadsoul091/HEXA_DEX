@@ -17,7 +17,7 @@ API_HASH = os.environ.get("API_HASH", "dc8004a68ca90a38c074d2c816d4b1cf")
 app = Client("Poke-Bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 pk = pokepy.V2Client()
 user_dict = {}
-with open("src/pkmn.txt") as f:
+with open("pkmn.txt") as f:
     pokemon_list = [pkmn[:-1] for pkmn in f.readlines()]
 
 
